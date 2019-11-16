@@ -1,0 +1,22 @@
+ion-content {
+    --background: url('/assets/img/search_bg.png') center;
+    --background-size: cover;
+    --padding-top: 30vh;
+}
+
+.img_container {
+    margin-top: 10vw;
+    margin-bottom: 20vw;
+    text-align: center;
+}
+
+.reference_input ion-input {
+    --background-color: transparent;
+    font-size: 32px;
+    color: #777;
+}
+
+.search_btn {
+    padding: 10px 0px;
+    height: 100px;
+}

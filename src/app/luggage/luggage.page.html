@@ -1,0 +1,45 @@
+<ion-content padding>
+
+  <ion-card>
+    <div class="card_image"></div>
+    <img [src]="currentImage" *ngIf="currentImage">
+    <ion-card-header>
+      <ion-card-subtitle>Code: H</ion-card-subtitle>
+      <ion-card-title>Hammad's Luggage</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <p>01/10/2019 12:33</p>
+            <h2><ion-icon name="airplane"></ion-icon> FIN</h2>
+            <p>LOADED</p>
+          </div>
+        </div>
+        <div class="container current left">
+          <div class="content">
+            <p>05/10/2019 10:20</p>
+            <h2><ion-icon name="airplane"></ion-icon> KSA</h2>
+            <p>UN-LOADED</p>
+          </div>
+        </div>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer no-border>
+  <ion-button class="footer_button" expand="full">
+    <ion-icon slot="start" name="checkmark"></ion-icon>
+    CLAIMED
+  </ion-button>
+  <ion-button class="footer_button" expand="full" color="danger" [routerLink]="'/lost/'">
+    <ion-icon slot="start" name="help"></ion-icon>
+    REPORT LOST
+  </ion-button>
+</ion-footer>

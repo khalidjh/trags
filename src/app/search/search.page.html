@@ -1,0 +1,21 @@
+<ion-content padding>
+<!-- 
+  <div class="img_container">
+    <img width=150 src="../../assets/img/luggage.png" />
+  </div> -->
+
+  <ion-item class="reference_input">
+    <ion-label position="floating">REFERENCE NUMBER</ion-label>
+    <!-- Input with clear button when there is a value -->
+    <ion-input clearInput></ion-input>
+  </ion-item>
+  <br>
+  <ion-item class="reference_input">
+    <ion-label position="floating">LAST NAME</ion-label>
+    <!-- Input with clear button when there is a value -->
+    <ion-input clearInput></ion-input>
+  </ion-item>
+
+  <ion-button class="search_btn" expand="full" [routerLink]="'/confirm/'">FIND MY FLIGHT</ion-button>
+
+</ion-content>

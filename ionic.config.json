@@ -1,5 +1,7 @@
 {
   "name": "trags",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

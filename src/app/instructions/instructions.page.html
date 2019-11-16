@@ -1,0 +1,27 @@
+<ion-content padding>
+
+  <div class="upper_div">
+    <div class="check_div">
+      <ion-icon name="checkmark-circle"></ion-icon>
+      <br>
+      <b>Welcome Mr. Hammad</b>
+      <p>Add your baggage to start tracking</p>
+    </div>
+
+    <!-- <ion-button class="search_btn" expand="full" [routerLink]="'/luggage/'"> -->
+    <ion-button class="search_btn" expand="full" (click)="takePicture()">
+      <div>
+          <div>
+              <ion-icon class="camera_icon" name="camera"></ion-icon>
+          </div>
+        <label>ADD BAGGAGE</label>
+      </div>
+    </ion-button>
+  </div>
+
+  <div class="instructions_div">
+    <img src="../../assets/img/rules.png" />
+  </div>
+
+
+</ion-content>

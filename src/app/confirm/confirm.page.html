@@ -1,0 +1,23 @@
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      <div><b class="title">Name</b><br><p class="body">Khalid Hammad</p></div>
+      <div><b class="title">Flight</b><br><p class="body">Finland, Helsinki</p></div>
+      <div><b class="title">Phone</b><br><p class="body">+40 040288 94</p></div>
+      <div><b class="title">Email</b><br><p class="body">khalidjh@gmail.com</p></div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col>
+      All information is correct ?
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="'/instructions/'">Yes, Continue</ion-button>
+      <ion-button [routerLink]="'/search/'" color="danger">No</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
