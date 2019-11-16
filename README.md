@@ -1,4 +1,4 @@
+![alt text](https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/324/square_256/ioniclogo.png)
+
 # Trags
 **Baggage Tracking System for travelers**
-
-![alt text](https://codereviewvideos.com/blog/wp-content/uploads/2015/05/ionic-logo-horizontal-transparent.png)
