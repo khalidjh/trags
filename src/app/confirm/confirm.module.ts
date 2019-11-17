@@ -8,12 +8,17 @@ import { ConfirmPageRoutingModule } from './confirm-routing.module';
 
 import { ConfirmPage } from './confirm.page';
 
+import { HTTP } from '@ionic-native/http/ngx';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ConfirmPageRoutingModule
+  ],
+  providers: [
+    HTTP
   ],
   declarations: [ConfirmPage]
 })

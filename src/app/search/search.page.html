@@ -1,8 +1,8 @@
 <ion-content padding>
-<!-- 
+
   <div class="img_container">
-    <img width=150 src="../../assets/img/luggage.png" />
-  </div> -->
+    <img width=150 src="../../assets/img/icon.png" />
+  </div>
 
   <ion-item class="reference_input">
     <ion-label position="floating">REFERENCE NUMBER</ion-label>
@@ -13,9 +13,11 @@
   <ion-item class="reference_input">
     <ion-label position="floating">LAST NAME</ion-label>
     <!-- Input with clear button when there is a value -->
-    <ion-input clearInput></ion-input>
+    <ion-input [(ngModel)]="name" clearInput></ion-input>
   </ion-item>
 
-  <ion-button class="search_btn" expand="full" [routerLink]="'/confirm/'">FIND MY FLIGHT</ion-button>
+  <ion-button color="vibrant" class="search_btn" expand="full" (click)="findFlight()">
+    <b>FIND MY FLIGHT</b>
+  </ion-button>
 
 </ion-content>

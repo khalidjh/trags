@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'search', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
     path: 'search',
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'confirm',
     loadChildren: () => import('./confirm/confirm.module').then( m => m.ConfirmPageModule)
+  },
+  {
+    path: 'rate',
+    loadChildren: () => import('./rate/rate.module').then( m => m.RatePageModule)
   },
 ];
 

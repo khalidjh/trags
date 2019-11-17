@@ -1,27 +1,51 @@
+<ion-header>
+  <ion-toolbar color="vibrant">
+    <ion-title>
+      TRAGS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content padding>
 
-  <div class="upper_div">
-    <div class="check_div">
-      <ion-icon name="checkmark-circle"></ion-icon>
-      <br>
-      <b>Welcome Mr. Hammad</b>
-      <p>Add your baggage to start tracking</p>
-    </div>
-
-    <!-- <ion-button class="search_btn" expand="full" [routerLink]="'/luggage/'"> -->
-    <ion-button class="search_btn" expand="full" (click)="takePicture()">
-      <div>
-          <div>
-              <ion-icon class="camera_icon" name="camera"></ion-icon>
-          </div>
-        <label>ADD BAGGAGE</label>
-      </div>
-    </ion-button>
+  <div class="check_div">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <br>
+    <b>Welcome Ms. Virtanen</b>
   </div>
 
-  <div class="instructions_div">
-    <img src="../../assets/img/rules.png" />
+  <h1>Let me help you pack .. 😃</h1>
+
+  <ul>
+
+  <li>Baggage Dimensions should be</li>
+  <div style="text-align: center;">
+    <img width=250 src="../../assets/img/baggage_size.jpg" />
   </div>
 
+  <li>Baggage weight should be &lt;= 23kg</li>
+
+  <li>Avoid the following restricted items (Finland 🇫🇮)</li>
+
+  </ul>
+
+  <img src="../../assets/img/rules.png" />
+
+  <div style="text-align: center;">
+    <h2>Congrats, add your baggage right now ! 😉</h2>
+  </div>
 
 </ion-content>
+
+<ion-footer>
+  <!-- <p>Add your baggage to start tracking</p> -->
+  <!-- <ion-button class="search_btn" expand="full" [routerLink]="'/luggage/'"> -->
+  <ion-button color="vibrant" class="search_btn" expand="full" (click)="takePicture()">
+    <div>
+      <div>
+        <ion-icon class="camera_icon" name="camera"></ion-icon>
+      </div>
+      <label>ADD BAGGAGE</label>
+    </div>
+  </ion-button>
+</ion-footer>

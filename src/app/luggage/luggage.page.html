@@ -1,40 +1,44 @@
+<ion-header>
+  <ion-toolbar color="vibrant">
+    <ion-title>
+      TRAGS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content padding>
 
   <ion-card>
-    <div class="card_image"></div>
+    <!-- <div class="card_image"></div> -->
     <img [src]="currentImage" *ngIf="currentImage">
     <ion-card-header>
-      <ion-card-subtitle>Code: H</ion-card-subtitle>
-      <ion-card-title>Hammad's Luggage</ion-card-title>
+      <ion-card-subtitle>Standard luggage, Rushbag, 6.5 KG</ion-card-subtitle>
+      <ion-card-title>Virtanen's Luggage</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-
-
       <div class="timeline">
-        <div class="container left">
+        <div *ngFor="let event of events" class="container left" [ngClass]="event.dot == 'green'  ? 'green' : ''">
           <div class="content">
-            <p>01/10/2019 12:33</p>
-            <h2><ion-icon name="airplane"></ion-icon> FIN</h2>
-            <p>LOADED</p>
-          </div>
-        </div>
-        <div class="container current left">
-          <div class="content">
-            <p>05/10/2019 10:20</p>
-            <h2><ion-icon name="airplane"></ion-icon> KSA</h2>
-            <p>UN-LOADED</p>
+            <p>{{event.timestamp}}</p>
+            <h2>
+              <ion-icon name="airplane"></ion-icon> {{event.airport}}
+            </h2>
+            <p>{{event.type}}</p>
           </div>
         </div>
       </div>
 
+      <ion-chip style="background-color: rgb(73, 211, 133); color: white; font-size: 14px;">UNDAMAGED</ion-chip>
+      <ion-chip style="background-color: rgb(73, 211, 133); color: white; font-size: 14px;">UNLOST</ion-chip>
+      <ion-chip style="background-color: rgb(211, 73, 73);  color: white; font-size: 14px;">FLAGGED</ion-chip>
     </ion-card-content>
   </ion-card>
 
 </ion-content>
 
-<ion-footer no-border>
-  <ion-button class="footer_button" expand="full">
+<ion-footer style="text-align: center;" no-border>
+  <ion-button color="vibrant" class="footer_button" expand="full" [routerLink]="'/rate/'">
     <ion-icon slot="start" name="checkmark"></ion-icon>
     CLAIMED
   </ion-button>

@@ -65,6 +65,11 @@ $green-color: #21e2c8;
     z-index: 1;
   }
 
+  .green::after {
+    background-color: $green-color;
+    border-color: $green-color;
+  }
+
   .current::after {
     background-color: $green-color;
     border-color: $green-color;
